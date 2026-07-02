@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Celestia Residency</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<meta name="description" content="Celestia Residency is a luxury hotel offering elegant rooms, fine dining, gallery and online reservations.">
+
+<meta name="keywords" content="hotel, luxury hotel, rooms, booking, dining, gallery, Celestia Residency">
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Celestia Residency</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Reserve Your Luxury Stay</h2>
+
+            <p>
+                Book your unforgettable experience at Celestia Residency.
+            </p>
+        </div>
+    </section>
+
+    <section class="rooms">
+
+        <h2 class="section-title">Reservation Form</h2>
+
+        <div class="card" style="max-width:700px; margin:auto;">
+
+            <form>
+
+                <label>Full Name</label><br><br>
+                <input type="text" placeholder="Enter your full name" style="width:100%; padding:12px;"><br><br>
+
+                <label>Email</label><br><br>
+                <input type="email" placeholder="Enter your email" style="width:100%; padding:12px;"><br><br>
+
+                <label>Phone Number</label><br><br>
+                <input type="tel" placeholder="Enter your phone number" style="width:100%; padding:12px;"><br><br>
+
+                <label>Check-In Date</label><br><br>
+                <input type="date" style="width:100%; padding:12px;"><br><br>
+
+                <label>Check-Out Date</label><br><br>
+                <input type="date" style="width:100%; padding:12px;"><br><br>
+                <label>Room Type</label><br><br>
+                <select style="width:100%; padding:12px;">
+                <option>Deluxe Suite</option>
+                <option>Executive Suite</option>
+                <option>Presidential Suite</option>
+            </select><br><br>
+
+                <label>Number of Guests</label><br><br>
+                <input type="number" min="1" max="10" placeholder="Enter number of guests" style="width:100%; padding:12px;"><br><br>
+
+                <label>Special Requests</label><br><br>
+                <textarea rows="5" placeholder="Write your special requests here..." style="width:100%; padding:12px;"></textarea><br><br>
+
+                <button type="submit" class="btn">Confirm Reservation</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Celestia Residency. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+<section class="rooms">
+
+    <h2 class="section-title">Room Price Calculator</h2>
+
+    <div class="card" style="max-width:600px; margin:auto;">
+
+        <label>Select Room</label><br><br>
+
+        <select id="roomType" style="width:100%; padding:12px;">
+            <option value="12999">Deluxe Suite - ₹12,999/Night</option>
+            <option value="18999">Executive Suite - ₹18,999/Night</option>
+            <option value="29999">Presidential Suite - ₹29,999/Night</option>
+        </select>
+
+        <br><br>
+
+        <label>Number of Days</label><br><br>
+
+        <input type="number" id="days" min="1" value="1" style="width:100%; padding:12px;">
+
+        <br><br>
+
+        <button class="btn" onclick="calculatePrice()">
+            Calculate Total
+        </button>
+
+        <h3 id="totalPrice" style="margin-top:20px;"></h3>
+
+    </div>
+
+</section>
